@@ -14,7 +14,7 @@ VERSION = '0.4.4'
 setup(
     name='steem',
     version=VERSION,
-    description='Python library for STEEM',
+    description='(legacy) Python library for STEEM',
     long_description=open('README.md').read(),
     download_url='https://github.com/xeroc/python-steem/tarball/' + VERSION,
     author='Fabian Schuh',
@@ -34,19 +34,7 @@ setup(
         'Topic :: Office/Business :: Financial',
     ],
     install_requires=[
-        "graphenelib",
-        "websockets==2.0",
-        "scrypt==0.7.1",
-        "diff-match-patch==20121119",
-        "appdirs==1.4.0",
-        "python-frontmatter==0.2.1",
-        "pycrypto==2.6.1",
-        "funcy",
-        # "python-dateutil",
-        # "secp256k1==0.13.2"
-    ],
-    dependency_links=[
-        "git+https://github.com/xeroc/python-graphenelib@minimal#egg=graphenelib"
+        "piston-lib",
     ],
     setup_requires=['pytest-runner'],
     tests_require=['pytest'],
